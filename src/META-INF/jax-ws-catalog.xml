@@ -2,4 +2,6 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <system systemId="http://localhost:8080/AgenciaWS/HotelWS?wsdl" uri="wsdl/localhost_8080/AgenciaWS/HotelWS.wsdl"/>
     <system systemId="http://localhost:8080/AgenciaWS/HotelWS?xsd=1" uri="wsdl/localhost_8080/AgenciaWS/HotelWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/AgenciaWS/VueloWS?wsdl" uri="wsdl/localhost_8080/AgenciaWS/VueloWS.wsdl"/>
+    <system systemId="http://localhost:8080/AgenciaWS/VueloWS?xsd=1" uri="wsdl/localhost_8080/AgenciaWS/VueloWS.xsd_1.xsd"/>
 </catalog>

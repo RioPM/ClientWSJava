@@ -18,18 +18,36 @@ public class ClientWSJava {
         // TODO code application logic here
         consultaLibres(1,6102015);
         reservaHabitacion(1,6102015);
+        consultaLibres_1(2,7102015);
+        reservaPlaza(2,7102015);
     }
 
     private static int consultaLibres(int idHotel, int fecha) {
         hotel.HotelWS_Service service = new hotel.HotelWS_Service();
         hotel.HotelWS port = service.getHotelWSPort();
+        System.out.println(port.consultaLibres(idHotel, fecha));
         return port.consultaLibres(idHotel, fecha);
     }
 
     private static int reservaHabitacion(int idHotel, int fecha) {
         hotel.HotelWS_Service service = new hotel.HotelWS_Service();
         hotel.HotelWS port = service.getHotelWSPort();
+        System.out.println(port.reservaHabitacion(idHotel, fecha));
         return port.reservaHabitacion(idHotel, fecha);
+    }
+
+    private static int consultaLibres_1(int idVuelo, int fecha) {
+        vuelo.VueloWS_Service service = new vuelo.VueloWS_Service();
+        vuelo.VueloWS port = service.getVueloWSPort();
+        System.out.println(port.consultaLibres(idVuelo, fecha));
+        return port.consultaLibres(idVuelo, fecha);
+    }
+
+    private static int reservaPlaza(int idVuelo, int fecha) {
+        vuelo.VueloWS_Service service = new vuelo.VueloWS_Service();
+        vuelo.VueloWS port = service.getVueloWSPort();
+        System.out.println(port.reservaPlaza(idVuelo, fecha));
+        return port.reservaPlaza(idVuelo, fecha);
     }
     
 }
