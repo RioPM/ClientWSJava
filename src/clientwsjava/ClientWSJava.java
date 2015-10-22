@@ -25,28 +25,28 @@ public class ClientWSJava {
     private static int consultaLibres(int idHotel, int fecha) {
         hotel.HotelWS_Service service = new hotel.HotelWS_Service();
         hotel.HotelWS port = service.getHotelWSPort();
-        System.out.println(port.consultaLibres(idHotel, fecha));
+        System.out.println("Hi ha "+port.consultaLibres(idHotel, fecha)+" lliures");
         return port.consultaLibres(idHotel, fecha);
     }
 
     private static int reservaHabitacion(int idHotel, int fecha) {
         hotel.HotelWS_Service service = new hotel.HotelWS_Service();
         hotel.HotelWS port = service.getHotelWSPort();
-        System.out.println(port.reservaHabitacion(idHotel, fecha));
+        System.out.println("S'ha reservat l'habitacio, ara queden "+port.reservaHabitacion(idHotel, fecha)+" lliures");
         return port.reservaHabitacion(idHotel, fecha);
     }
 
     private static int consultaLibres_1(int idVuelo, int fecha) {
         vuelo.VueloWS_Service service = new vuelo.VueloWS_Service();
         vuelo.VueloWS port = service.getVueloWSPort();
-        System.out.println(port.consultaLibres(idVuelo, fecha));
+        System.out.println("Hi ha "+port.consultaLibres(idVuelo, fecha)+ " lliures");
         return port.consultaLibres(idVuelo, fecha);
     }
 
     private static int reservaPlaza(int idVuelo, int fecha) {
         vuelo.VueloWS_Service service = new vuelo.VueloWS_Service();
         vuelo.VueloWS port = service.getVueloWSPort();
-        System.out.println(port.reservaPlaza(idVuelo, fecha));
+        System.out.println("S'ha reservat el vol, ara queden "+port.reservaPlaza(idVuelo, fecha)+ " lliures");
         return port.reservaPlaza(idVuelo, fecha);
     }
     
